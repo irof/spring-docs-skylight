@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+	<base target="_blank">
+</head>
+
+<body>
+	<div>
+		<input type="text" id="query" size="80" placeholder="Searchボタンで使うキーワード">
+		<button id="reset">RESET</button>
+		<label> <input type="checkbox" id="newtab">新しいタブで開く</label>
+		<label> <input type="checkbox" id="pleiades">日本語（<a href="https://spring.pleiades.io/">pleiades.io</a>）</label>
+		<details>
+			<p>
+				<a href="https://irof.hateblo.jp/entry/2021/07/07/113445">Springのドキュメントの探し方 / 日々常々</a> の実装です。
+			</p>
+			<p>
+				複数ページにまたがるドキュメントは選択したバージョンでGoogle検索を行います。
+				"Search"じゃないボタンは検索キーワードは使われません。開いた後にページ内検索を行ってください。
+			</p>
+		</details>
+	</div>
+	<div>
+		<h2>Spring Boot</h2>
+		<select id="bootVersion">
+			<option>current</option>
+			<option>2.5.x</option>
+			<option>2.4.x</option>
+		</select>
+		<button id="bootButton">Search</button>
+		<button id="bootSinglePageButton">Open Single HTML</button>
+		<button id="bootPropertiesPageButton">Open Properties</button>
+	</div>
+	<div>
+		<h2>Spring Framework</h2>
+		<select id="coreVersion">
+			<option>current</option>
+			<option>5.3.x</option>
+			<option>5.2.x</option>
+		</select>
+		<button id="coreButton">Search</button>
+	</div>
+	<div>
+		<h2>Spring Security</h2>
+		<select id="securityVersion">
+			<option>current</option>
+			<option>5.6.x</option>
+			<option>5.5.x</option>
+		</select>
+		<button id="securityButton">Open</button>
+	</div>
+	<div>
+		<h2>GitHub spring-projects/*</h2>
+		<button id="githubButton">Search</button>
+	</div>
+	<script src="popup.js"></script>
+</body>
+
+</html>

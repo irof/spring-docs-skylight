@@ -1,0 +1,14 @@
+body {
+	background-color: #DFD;
+}
+
+h2 {
+	padding: .3em;
+	background-color: #595;
+	color: #FFF;
+}
+
+input {
+	padding: .5em;
+	border-radius:.5em;
+}
